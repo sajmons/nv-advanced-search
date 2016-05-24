@@ -1,0 +1,17 @@
+{
+  "name": "nv-advanced-search",
+  "version": "0.1.0",
+  "description": "Advanced database search using Strongloop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "advanced",
+    "search",
+    "database",
+    "strongloop"
+  ],
+  "author": "Simon Šander <simon.sander@vizija.si>",
+  "license": "ISC"
+}
