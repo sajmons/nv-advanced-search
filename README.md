@@ -18,7 +18,7 @@ require('nv-advanced-search')(app);
 require('nv-advanced-search')(app, '/myAdvancedSearchEndpoint');
 ```
 
-POST body
+POST JSON
 
 This example is for MS SQL loopback connector, you can use different loopback connector.
 
