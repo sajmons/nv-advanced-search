@@ -56,11 +56,13 @@ This example is for MS SQL loopback connector, you can use different loopback co
 }
 ```
 
+```js
 curl -data "use json above" https://localhost:3100/advanced-search
 
 or
 
 curl -data "use json above" https://localhost:3100/myAdvancedSearchEndpoint
+```
 
 ## License
 
