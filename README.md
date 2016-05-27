@@ -18,9 +18,11 @@ require('nv-advanced-search')(app);
 require('nv-advanced-search')(app, '/myAdvancedSearchEndpoint');
 ```
 
-POST JSON
+## POST JSON
 
 This example is for MS SQL loopback connector, you can use different loopback connector.
+
+You should use **HTTPS** because datasource contains some sensitive data!
 
 ```js
 {
@@ -56,7 +58,7 @@ This example is for MS SQL loopback connector, you can use different loopback co
 }
 ```
 
-Example call using curl
+## Example call using curl
 
 ```js
 curl -data "use json above" https://localhost:3100/advanced-search
