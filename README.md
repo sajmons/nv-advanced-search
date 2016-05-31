@@ -27,33 +27,22 @@ You should use **HTTPS** because datasource contains some sensitive data!
 ```js
 {
     "ds": {
-        "type": "mssql",
-        "host": "ip address or name of your database server",
+        "server": "ip address or name of your database server",
         "port": 1433,
         "database": "name of database",
-        "username": "username of database user",
-        "password": "password of database user",
-        "schema": "schema if different than dbo"
+        "user": "username of database user",
+        "password": "password of database user"
     },
-    "models": [{
-        "name": "Nameofyourmodel",
-        "properties": {
-            "foo": "string",
-            "bar": "string"
-        }
-    }],
-    "options": {
-    },
-    "query": {
-        "where": {
-            "foo": {
-                "like": "%bar%"
-            }
-        },
-        "fields": {
-            "id": false
-        },
-        "order": ["foo"]
+    ,
+    "method": {
+        "name": "mssql stored procedure name",
+        "parameters": [{
+            "name": "foo",
+            "value": "foo value"
+        }, {
+            "name": "bar",
+            "value": "bar value"
+        }]
     }
 }
 ```
